@@ -1,0 +1,7 @@
+main {
+  /* Fix the size of your design before you do anything else */
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  border: 3px solid #cecece;
+}
