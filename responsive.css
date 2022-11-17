@@ -1,3 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
+
+@font-face {
+  font-family: 'Angellia';
+  src: url('Angellia demo.ttf');
+}
+
+@font-face {
+  font-family: 'Sealtest';
+  src: url('GuldScriptPersonalUseOnly-nJ2g.ttf');
+}
+
+
+
+html {
+  display: flex;
+  justify-content: center;  
+  border: none;
+}
+
+main, #stencil {
+  border: none;
+}
+
+html * {
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+ width: 100%;
+ height: 100%;
+
+ overflow: hidden;
+ 
+} 
+
+body {
+  width: 100%;
+}
+
+html body {
+
+  
+
+  align-self: center;
+  border: solid black 1px;
+  background-image: url("paper.png");
+  background-size: 100%;
+  filter: sepia(0.05);
+
+  overflow: hidden;
+  
+  z-index: -100;
+  border: none;
+  margin-bottom: 0px;
+}
+
+#markerHeading {
+  
+
+  
+
+  position: absolute;
+
+  top: 3.9vh;
+
+  transform: translateX(50vw) translateX(-50%) translate(max(-16vh, -1000px)) rotate(-24deg);
+ 
+  
+  font-family: "Angellia";
+
+  text-shadow: 1px 1px black;
+  text-decoration: underline;
+  text-underline-offset: 20px;
+  text-decoration-thickness: 6px;
+  font-style: italic;
+  font-size: min(7vw, 42px);
+  
+  letter-spacing: -2px;
+  
+  
+  
+  
+  -webkit-background-clip: text;
+	background-clip: text;
+  background-color: black;
+  
+    /* url("data:image/svg+xml;utf8,"); */
+
+  
+	color: transparent;
+  
+}
+
+#scoop {
+
+  
+  position: absolute;
+  
+  height: 40vh;
+  top: 5vh;
+  transform: translateX(50vw) translateX(calc(-50%)) rotateX(30deg) rotateZ(20deg);
+  z-index: 10;
+
+}
+
+#cone {
+
+  height: 50vh;
+  top: 25vh;
+  position: absolute;
+  transform: translateX(50vw) translateX(calc(-50%)) scaleY(1.4) scaleX(1.1);
+  z-index: 9;
+}
+
+#demand {
+  
+  position: absolute;
+  transform: translate(50vw, 50vh) translate(35%, -42vh) scaleX(0.97);
+  
+  
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 300;
+  
+}
+
+#trademarkDiv {
+ 
+  position: absolute;
+  transform: translate(50vw, 50vh) translate(-100%, 0%);
+
+  background-color: rgb(198,34,33);
+  padding: 5px 20px 5px 20px;
+ 
+  
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  z-index: 10;
+}
+
+#brandName {
+ 
+  color: white;
+  font-family: 'Sealtest';
+  font-weight: 100;
+  font-size: 50px;
+}
+
+#trademark {
+ 
+  font-size: 1px;
+  letter-spacing: 0.5px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-size: 5px;
+  transform: translateY(-15px);
+}
+
+#argument * {
+  
+
+  line-height: 15px;
+}
+
+#arg1, #arg3 {
+  
+  text-align: right;
+  font-weight: 300;
+}
+
+#arg2, #arg4 {
+  text-align: left;
+  font-weight: 300;
+}
+
+#argument {
+ 
+  display: flex;
+  flex-flow: column;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 3.5px;
+  width: 120px;
+  height: 300px;
+
+  position: absolute;
+  transform: translate(50vw, 50vh) translate(-185%, -25%);
+
+}
+
+/* @media only screen and (max-width: 1000px) {
+  #argument {
+    background-color: lightblue;
+  }
+} */
+
+#disclaimer {
+  
+  font-family: "Roboto";
+  font-size: 6px;
+  line-height: 8px;
+  position: absolute;
+  transform: translate(50vw, 50vh) translate(50%, -25%);
+
+ 
+}
+
+#titleDiv {
+  position: absolute;
+  top: 75vh;
+  
+  width: 100%;
+}
+
+#title {
+  
+  text-align: center;
+  
+  transform: scaleY(1.2);
+  font-family: "Roboto";
+  font-weight: bolder;
+  font-size: 16vh;
+  line-height: 16vh;
+  z-index: 5;
+}
+
+#subtitle {
+  
+  
+  transform:scaleY(1.2);
+  
+  text-align: center;
+  
+  font-family: "Roboto";
+  font-weight: 200;
+  
+  font-size: 20px;
+  z-index: 5;
+}
+
+
+
+
+
+
 main {
   border: 3px solid #efefef;
   margin: auto;
@@ -61,3 +308,5 @@ main::before {
   align-items: center;
   justify-content: center;
 }
+
+

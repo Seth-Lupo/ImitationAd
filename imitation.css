@@ -1,7 +1,211 @@
-main {
-  /* Fix the size of your design before you do anything else */
-  width: 400px;
-  height: 400px;
-  margin: auto;
-  border: 3px solid #cecece;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
+
+@font-face {
+  font-family: 'Angellia';
+  src: url('Angellia demo.ttf');
 }
+
+@font-face {
+  font-family: 'Sealtest';
+  src: url('GuldScriptPersonalUseOnly-nJ2g.ttf');
+}
+
+
+
+html {
+  display: flex;
+  justify-content: center;  
+  border: none;
+}
+
+html * {
+  margin: 0px;
+  padding: 0px;
+}
+
+main * {
+ 
+} 
+
+#stencil {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("grain.png");
+  background-size: 100% 100%;
+  filter: opacity(0);
+  z-index: 50;
+}
+
+main {
+  aspect-ratio: 500/654;
+  width: 500px;
+  align-self: center;
+  border: solid black 1px;
+  background-image: url("paper.png");
+  background-size: 100%;
+  filter: sepia(0.05);
+  
+  z-index: -100;
+}
+
+#markerHeading {
+  
+  position: absolute;
+
+  font-family: "Angellia";
+
+  text-shadow: 1px 1px black;
+  text-decoration: underline;
+  text-underline-offset: 20px;
+  text-decoration-thickness: 6px;
+  font-style: italic;
+  font-size: 36px;
+  letter-spacing: -2px;
+  transform: rotate(-24deg) translate(-3px, 55px);
+  
+  -webkit-background-clip: text;
+	background-clip: text;
+  background-color: black;
+  
+    /* url("data:image/svg+xml;utf8,"); */
+
+  
+	color: transparent;
+  
+}
+
+#scoop {
+
+  position: absolute;
+  width: 240px;
+  top: 70px;
+  left: 50%;
+  transform: translateX(calc(-50% - 5px)) rotateX(30deg) rotateZ(20deg);
+  z-index: 10;
+}
+
+#cone {
+
+  position: absolute;
+  width: 300px;
+  top: 190px;
+  left: 50%;
+  transform: translateX(calc(-50% - 10px)) scaleY(1.4) scaleX(1.1);
+  z-index: 9;
+}
+
+#demand {
+  position: absolute;
+  top: 92px;
+  left: 317px;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 300;
+  transform: scaleX(0.97);
+}
+
+#trademarkDiv {
+  position: absolute;
+  background-color: rgb(198,34,33);
+  padding: 5px 20px 5px 20px;
+  top: 410px;
+  left: 70px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  z-index: 10;
+}
+
+#brandName {
+ 
+  color: white;
+  font-family: 'Sealtest';
+  font-weight: 100;
+  font-size: 50px;
+}
+
+#trademark {
+ 
+  font-size: 1px;
+  letter-spacing: 0.5px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-size: 5px;
+  transform: translateY(-15px);
+}
+
+#argument * {
+  
+  line-height: 15px;
+}
+
+#arg1, #arg3 {
+  
+  text-align: right;
+  font-weight: 300;
+}
+
+#arg2, #arg4 {
+  text-align: left;
+  font-weight: 300;
+}
+
+#argument {
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 3.5px;
+  width: 120px;
+  height: 300px;
+
+  top: 313px;
+  left: 25px;
+ 
+}
+
+#disclaimer {
+  position: absolute;
+  font-family: "Roboto";
+  font-size: 6px;
+  line-height: 8px;
+  width: 150px;
+  height: 300px;
+
+  top: 433px;
+  left: 290px;
+}
+
+#title {
+  position: absolute;
+  text-align: center;
+  top: 480px;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1.2);
+  font-family: "Roboto";
+  font-weight: bolder;
+  font-size: 120px;
+  z-index: 5;
+}
+
+#subtitle {
+  position: absolute;
+  text-align: center;
+  top: 610px;
+  left: 10%;
+  
+  font-family: "Roboto";
+  font-weight: 200;
+  
+  font-size: 20px;
+  z-index: 5;
+}
+
+
+
+
+
+
